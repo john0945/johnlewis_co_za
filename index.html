@@ -1,47 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coming Soon</title>
-  <style>
-    html, body {
-      height: 100%;
-      margin: 0;
-    }
-    body {
-      background-color: #000;
-      color: #fff;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-    h1 {
-      font-size: clamp(2.5rem, 10vw, 6rem);
-      font-weight: 300;
-      letter-spacing: 0.1em;
-      margin: 0;
-    }
-    a {
-      margin-top: 2rem;
-      color: #fff;
-      text-decoration: none;
-      font-size: 1.1rem;
-      letter-spacing: 0.05em;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.4);
-      padding-bottom: 2px;
-      transition: border-color 0.2s ease;
-    }
-    a:hover {
-      border-color: #fff;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>John Lewis</title>
+  <meta name="description" content="Home workshop notes on woodworking, software, and 3D printing.">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Coming Soon</h1>
-  <a href="https://www.linkedin.com/in/johnlewis0945/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-title" href="index.html">John Lewis</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="professional/index.html">Professional</a></li>
+          <li><a href="software/index.html">Software</a></li>
+          <li><a href="printing/index.html">3D Printing</a></li>
+          <li><a href="woodworking/index.html">Woodworking</a></li>
+          <li><a href="misc/index.html">Miscellaneous</a></li>
+          <li><a href="files/index.html">Files</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>By day I design and build medical devices - currently audiology and hearing technology, before that neuromuscular monitors used in operating theatres. That means a lot of embedded firmware, software, PCB layout, regulatory paperwork, and root-cause investigations that run later into the night than planned.</p>
+      <p>Outside of working hours I love making things - usually to solve problems around the house or workshop. This can range from a toy wheelbarrow built during one naptime, to a multi-year obsession with making wooden bolts (ongoing). I found these projects often get buried in my camera roll (if I even take photos), and so the aim of this website is to document the projects in a way I can share them more easily and hopefully provide some value to others.</p>
+    </section>
+
+    <section id="tabs">
+      <h2>Browse by topic</h2>
+      <div class="tab-grid">
+        <a class="tab-card fiducial" href="professional/index.html">
+          <span class="tab-icon" aria-hidden="true">
+            <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="8" width="22" height="15" rx="2"/>
+              <path d="M10 8 V6.5 A2.5 2.5 0 0 1 12.5 4 h3 A2.5 2.5 0 0 1 18 6.5 V8"/>
+              <path d="M3 14 H25"/>
+              <path d="M12.5 13 h3 v2 h-3 Z"/>
+            </svg>
+          </span>
+          <h3>Professional</h3>
+        </a>
+        <a class="tab-card fiducial" href="software/index.html">
+          <span class="tab-icon" aria-hidden="true">
+            <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="5" width="22" height="18" rx="2.5"/>
+              <path d="M8 12 l3 2.5 -3 2.5"/>
+              <path d="M14 17 h5"/>
+            </svg>
+          </span>
+          <h3>Software</h3>
+        </a>
+        <a class="tab-card fiducial" href="printing/index.html">
+          <span class="tab-icon" aria-hidden="true">
+            <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 4v5"/>
+              <path d="M11 9h6l-1.5 4h-3z"/>
+              <path d="M6 23c2-1 4-1.5 8-1.5s6 .5 8 1.5"/>
+              <path d="M7 20c2-.8 4-1.2 7-1.2s5 .4 7 1.2"/>
+              <path d="M8 17c1.8-.6 3.5-1 6-1s4.2.4 6 1"/>
+            </svg>
+          </span>
+          <h3>3D Printing</h3>
+        </a>
+        <a class="tab-card fiducial" href="woodworking/index.html">
+          <span class="tab-icon" aria-hidden="true">
+            <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2.5" y="6" width="23" height="7" rx="1.5"/>
+              <path d="M5.5 9.5 q5 -1 10 0 t9 0"/>
+              <rect x="2.5" y="15" width="23" height="7" rx="1.5"/>
+              <path d="M5.5 18.5 q5 -1 10 0 t9 0"/>
+            </svg>
+          </span>
+          <h3>Woodworking</h3>
+        </a>
+        <a class="tab-card fiducial" href="misc/index.html">
+          <span class="tab-icon" aria-hidden="true">
+            <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3.5 7 h21 v5 h-21 Z"/>
+              <path d="M5 12 V21 a1 1 0 0 0 1 1 H22 a1 1 0 0 0 1 -1 V12"/>
+              <path d="M11 16 h6"/>
+            </svg>
+          </span>
+          <h3>Miscellaneous</h3>
+        </a>
+        <a class="tab-card fiducial" href="files/index.html">
+          <span class="tab-icon" aria-hidden="true">
+            <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 3 H16 L21 8 V24 a1 1 0 0 1 -1 1 H8 a1 1 0 0 1 -1 -1 V4 a1 1 0 0 1 1 -1 Z"/>
+              <path d="M16 3 V7 a1 1 0 0 0 1 1 H21"/>
+              <path d="M14 12.5 V19"/>
+              <path d="M11 16 l3 3 3 -3"/>
+            </svg>
+          </span>
+          <h3>Files</h3>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 John Lewis</p>
+  </footer>
 </body>
 </html>

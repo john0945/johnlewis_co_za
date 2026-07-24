@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>This Website - John Lewis</title>
+  <meta name="description" content="How this site is built - a static site made with Claude and hosted on GitHub Pages.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-title" href="../index.html">John Lewis</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../professional/index.html">Professional</a></li>
+          <li><a href="../software/index.html" aria-current="page">Software</a></li>
+          <li><a href="../printing/index.html">3D Printing</a></li>
+          <li><a href="../woodworking/index.html">Woodworking</a></li>
+          <li><a href="../misc/index.html">Miscellaneous</a></li>
+          <li><a href="../files/index.html">Files</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <article class="post">
+      <h1>This Website</h1>
+
+      <p>This site is my logbook - woodworking, 3D printing, software, and whatever else I've been tinkering with. It's also a small project in its own right, so here's a quick note on how it's put together.</p>
+
+      <h2>Under the hood</h2>
+      <ul>
+        <li><strong>Static site</strong> - plain HTML and CSS, no framework, no build step. The pages you're reading are served exactly as they're written.</li>
+        <li><strong>Built with Claude</strong> - the whole thing was written by pair-programming with Claude Code, from the theme down to this post.</li>
+        <li><strong>Hosted on GitHub Pages</strong> - the repository is published directly, so a push is all it takes to deploy.</li>
+      </ul>
+
+      <p>The source is public if you'd like to poke around or borrow anything: <a href="https://github.com/john0945/johnlewis_co_za" target="_blank" rel="noopener">github.com/john0945/johnlewis_co_za</a>.</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 John Lewis</p>
+  </footer>
+</body>
+</html>
