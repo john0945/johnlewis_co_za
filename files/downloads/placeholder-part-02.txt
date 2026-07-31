@@ -1,4 +1,0 @@
-This is a placeholder for a future .step file.
-
-Once a real CAD export is ready, replace this file with the actual
-.step file and update the download link and details in files/index.html.
